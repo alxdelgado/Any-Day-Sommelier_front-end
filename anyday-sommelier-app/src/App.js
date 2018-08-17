@@ -1,18 +1,28 @@
 import React, { Component } from 'react';
+import HomeContainer from './HomeContainer/HomeContainer.js';
 import logo from './logo.svg';
 import './App.css';
+import {Route, Switch, Link} from 'react-router-dom';
+
+
+const My404 = () => {
+  return (
+    <div>
+        <h1>404</h1>
+        <h3>Sorry, the page connot be found</h3>
+    </div>
+  )
+}
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+          <Link to='/user/register'>Register</Link>
+          <Link to='/user/login'>Login</Link>
+          <Switch>
+            <Route exact path='/' component= {HomeContainer}/>
+          </Switch>
       </div>
     );
   }
