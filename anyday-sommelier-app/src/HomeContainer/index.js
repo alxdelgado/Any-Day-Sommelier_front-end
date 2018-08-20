@@ -12,7 +12,7 @@ class HomeContainer extends React.Component {
       <div>
         <img className="placeholderName" src="#" alt="Logo"></img>
 
-        <img  src="/Users/kyder/funky-ducks/Unit4/any-day-sommelier_front-end/anyday-sommelier-app/public/Images/TypeLogo.svg"></img>
+        <img className="Hero" src="/Images/TypeLogo.svg"></img>
 
         <img className="placeholderName" src="#" alt="Example Pairing"></img>
         <img className="placeholderName" src="#" alt="Example Pairing"></img>
