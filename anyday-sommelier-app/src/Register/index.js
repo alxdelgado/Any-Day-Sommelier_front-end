@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-className Register extends Component {
+class Register extends Component {
   constructor() {
     super();
     this.state = {
