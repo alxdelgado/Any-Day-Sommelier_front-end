@@ -11,7 +11,9 @@ class HomeContainer extends React.Component {
     return(
       <div>
         <img className="placeholderName" src="#" alt="Logo"></img>
-        <h1>ANYDAY SOMMELIER</h1>
+
+        <img  src="/Users/kyder/funky-ducks/Unit4/any-day-sommelier_front-end/anyday-sommelier-app/public/Images/TypeLogo.svg"></img>
+
         <img className="placeholderName" src="#" alt="Example Pairing"></img>
         <img className="placeholderName" src="#" alt="Example Pairing"></img>
         <img className="placeholderName" src="#" alt="Example Pairing"></img>
