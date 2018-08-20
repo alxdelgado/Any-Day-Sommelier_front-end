@@ -3,9 +3,10 @@ import HomeContainer from './HomeContainer/index.js';
 import logo from './logo.svg';
 import Header from "./Header";
 import Footer from "./Footer";
+import FormLogin from './FormLogin';
 import './App.css';
 import {Route, Switch, Link} from 'react-router-dom';
-
+import Register from './Register'
 
 const My404 = () => {
   return (
@@ -23,6 +24,10 @@ class App extends Component {
           <Header />
           <Switch>
             <Route exact path='/' component= {HomeContainer}/>
+            <Route exact path='/Register' component={Register}/>
+            <Route exact path='/FormLogin' component={FormLogin}/>
+            <Route component={My404}/>
+
           </Switch>
           <Footer />
       </div>

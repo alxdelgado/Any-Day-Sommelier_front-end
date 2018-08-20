@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <header className="navBar" role="banner navigation">
       <nav>
-        <div className="navUl">
-          <img className="svg" src="/Images/wine-glass-alt-solid.svg" className="navIcon" alt="Site icon"></img>
+        <div>
+          <img className="navIcon" src="/Images/wine-glass-alt-solid.svg" alt="Site icon"></img>
         </div>
         <div className="navUl">
           <ul>

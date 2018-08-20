@@ -31,7 +31,12 @@ p {
   font-size: 1em;
   color: #DDDCC5;
 }
-
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1D2326;
+}
 .navUl {
   margin: 0;
   padding: 0;
@@ -41,8 +46,8 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
   align-items: center;
   background-color: #1D2326;
 }
@@ -52,9 +57,10 @@ p {
   margin-right: 1.5em;
 }
 
-.navIcon {
+div .navIcon {
   height: 4vh;
   width: 4vw;
+  align-items: center;
 }
 
 .Hero {
