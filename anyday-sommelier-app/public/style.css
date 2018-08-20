@@ -9,7 +9,6 @@ body {
   height: 110vh;
 }
 
-
 h1 {
   font-family: "Gill Sans", sans-serif;
   font-size: 4em;
@@ -29,7 +28,6 @@ p {
   font-family: "Gill Sans", sans-serif;
   font-size: 1em;
 }
-
 
 .navUl {
   margin: 0;
@@ -60,16 +58,9 @@ footer {
   height: 10vh;
   background-color: gray;
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-
-
-}
-
-.App {
-  padding: 0;
 }
 
 footer p {
@@ -77,6 +68,9 @@ footer p {
   color: lime;
   margin: 0;
   padding: 0;
+}
 
-
+div.App {
+  padding: 0;
+  margin: 0;
 }
