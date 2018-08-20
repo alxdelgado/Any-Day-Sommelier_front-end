@@ -10,8 +10,14 @@ class HomeContainer extends React.Component {
   render() {
     return(
       <div>
-        <h1>HomeContainer</h1><br/>
-        <p>Hello!</p>
+        <img className="placeholderName" src="#" alt="Logo"></img>
+
+        <img  src="/Users/kyder/funky-ducks/Unit4/any-day-sommelier_front-end/anyday-sommelier-app/public/Images/TypeLogo.svg"></img>
+
+        <img className="placeholderName" src="#" alt="Example Pairing"></img>
+        <img className="placeholderName" src="#" alt="Example Pairing"></img>
+        <img className="placeholderName" src="#" alt="Example Pairing"></img>
+        <p>Welcome to Anyday Sommelier- the handy app for discovering your new favorite wine and entre pairings. Tap the icons to get started or sign in below to create an account, allowing to save, vote, and favorite pairings.</p>
       </div>
     )
   }
