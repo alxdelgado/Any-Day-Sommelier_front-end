@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import HomeContainer from './HomeContainer/HomeContainer.js';
-import Header from './HeaderContainer/index.js'
+import HomeContainer from './HomeContainer/index.js';
 import logo from './logo.svg';
+import Header from "./Header";
 import './App.css';
 import {Route, Switch, Link} from 'react-router-dom';
 import Register from './Register'
@@ -19,8 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Link to='/user/register'>Register</Link><br/>
-          <Link to='/user/login'>Login</Link><br/>
+          <Header />
           <Switch>
             <Route exact path='/' component= {HomeContainer}/>
             <Route exact path='/Register' component={Register}/>

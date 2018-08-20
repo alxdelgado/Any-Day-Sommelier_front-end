@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import HomeContainer from './HomeContainer/HomeContainer.js';
+import HomeContainer from './HomeContainer/index.js';
 
 class ShowContainer extends React.Component {
   constructor() {
