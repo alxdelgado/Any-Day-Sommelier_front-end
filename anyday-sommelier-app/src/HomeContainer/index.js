@@ -10,7 +10,7 @@ class HomeContainer extends React.Component {
   render() {
     return(
       <div>
-        <img className="placeholderName" src="#" alt="Main Image"></img>
+        <img className="placeholderName" src="#" alt="Logo"></img>
         <h1>ANYDAY SOMMELIER</h1>
         <img className="placeholderName" src="#" alt="Example Pairing"></img>
         <img className="placeholderName" src="#" alt="Example Pairing"></img>

@@ -1,5 +1,5 @@
 body {
-  background-color: red;
+  background-color: aliceblue;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -10,32 +10,33 @@ body {
 }
 
 h1 {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 4em;
 }
 
 h2 {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 3em;
 }
 
 h3 {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 2em;
 }
 
 p {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
 }
 
 .navUl {
   margin: 0;
   padding: 0;
+  height: 7vh;
   text-align: center;
   list-style-type: none;
   font-family: "Open Sans", sans-serif;
-  font-size: 2.5em;
+  font-size: 1em;
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
@@ -46,7 +47,7 @@ p {
 .navBar a {
   text-decoration: none;
   color: #DDD;
-  margin-right: 40px;
+  margin-right: 1.5em;
 }
 
 .navIcon {
@@ -55,8 +56,8 @@ p {
 }
 
 footer {
-  height: 10vh;
-  background-color: gray;
+  height: 7vh;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,9 +65,9 @@ footer {
 }
 
 footer p {
-  font-size: 3em;
-  color: lime;
-  margin: 0;
+  font-size: 1em;
+  color: white;
+  margin-right: 1.5em;
   padding: 0;
 }
 
