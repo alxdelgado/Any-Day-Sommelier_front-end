@@ -10,7 +10,7 @@ class HomeContainer extends React.Component {
   render() {
     return(
       <div>
-        <h1>HomeContainer</h1>
+        <h1>HomeContainer</h1><br/>
         <p>Hello!</p>
       </div>
     )

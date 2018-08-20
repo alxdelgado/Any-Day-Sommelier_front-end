@@ -18,8 +18,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <Link to='/user/register'>Register</Link>
-          <Link to='/user/login'>Login</Link>
+          <Link to='/user/register'>Register</Link><br/>
+          <Link to='/user/login'>Login</Link><br/>
           <Switch>
             <Route exact path='/' component= {HomeContainer}/>
           </Switch>
