@@ -68,13 +68,15 @@ footer {
 
 }
 
+.App {
+  padding: 0;
+}
+
 footer p {
   font-size: 3em;
   color: lime;
   margin: 0;
   padding: 0;
-
-
 
 
 }
