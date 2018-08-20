@@ -5,11 +5,15 @@ const Header = () => {
   return (
     <header className="navBar" role="banner navigation">
       <nav>
-        <ul className="navUl">
-          <img src="public/Images/wine-glass-alt-solid.svg" class="navIcon" alt="Site icon"></img>
-          <Link to='/user/register'>Register</Link>
-          <Link to='/user/login'>Login</Link>
-        </ul>
+        <div className="navUl">
+          <img className="svg" src="/Images/wine-glass-alt-solid.svg" className="navIcon" alt="Site icon"></img>
+        </div>
+        <div className="navUl">
+          <ul>
+            <Link to='/user/register'>Register</Link>
+            <Link to='/user/login'>Login</Link>
+          </ul>
+        </div>
       </nav>
     </header>
     )

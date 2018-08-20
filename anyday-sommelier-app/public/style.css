@@ -41,7 +41,7 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 1em;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
   background-color: #1D2326;
@@ -53,8 +53,14 @@ p {
 }
 
 .navIcon {
-  height: 100px;
-  width: 100px;
+  height: 4vh;
+  width: 4vw;
+}
+
+.Hero {
+  width: 75vw;
+  max-width: 500px;
+  justify-content: center;
 }
 
 footer {
@@ -70,6 +76,8 @@ footer p {
   font-size: 1em;
   color: #DDDCC5;
   margin-right: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 0;
 }
 
