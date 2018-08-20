@@ -4,7 +4,9 @@ class HomeContainer extends React.Component {
   constructor() {
     super();
     this.state = {
-      home: []
+      users: [],
+      wine: [],
+      entree: []
     }
   }
   render() {
