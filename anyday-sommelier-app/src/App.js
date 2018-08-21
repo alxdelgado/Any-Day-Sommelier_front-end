@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import Header from "./Header";
 import Footer from "./Footer";
 import FormLogin from './FormLogin';
+import Results from './Results';
 import './App.css';
 import {Route, Switch, Link} from 'react-router-dom';
 import Register from './Register'
