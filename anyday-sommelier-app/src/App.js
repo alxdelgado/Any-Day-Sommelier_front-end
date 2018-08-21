@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import HomeContainer from './HomeContainer/index.js';
+import DeleteContainer from './DeleteContainer/index.js';
+import ShowContainer from './ShowContainer/index.js';
 import logo from './logo.svg';
-import Header from "./Header";
-import Footer from "./Footer";
-import FormLogin from './FormLogin';
+import Header from './Header/index.js';
+import Footer from './Footer/index.js';
+import FormLogin from './FormLogin/index.js';
 import './App.css';
 import {Route, Switch, Link} from 'react-router-dom';
-import Register from './Register'
+import Register from './Register/index.js';
+import Login from './Login/index.js';
+
 
 const My404 = () => {
   return (
@@ -25,7 +29,12 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component= {HomeContainer}/>
             <Route exact path='/Register' component={Register}/>
+            <Route exact path='/Login' component={Login}/>
             <Route exact path='/FormLogin' component={FormLogin}/>
+            <Route exact path='/Header' component={Header}/>
+            <Route exact path='/Footer' component={Footer}/>
+            <Route exact path='/DeleteContainer' component={DeleteContainer}/>
+            <Route exact path='/ShowContainer' component={ShowContainer}/>
             <Route component={My404}/>
 
           </Switch>

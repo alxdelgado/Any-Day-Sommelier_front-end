@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-className Login extends Component {
+class Login extends Component {
   constructor() {
     super();
     this.state = {

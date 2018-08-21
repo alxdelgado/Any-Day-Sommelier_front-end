@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
-import HomeContainer from './HomeContainer/index.js';
+
 
 class ShowContainer extends React.Component {
   constructor() {
     super();
     this.state = {
-
+      wine: [],
+      meat: []
     }
   }
 
@@ -13,6 +14,12 @@ class ShowContainer extends React.Component {
     return(
       <div>
         <h1>Show Page</h1>
+          <label>
+            <input type='text' placeholder='Wine' value='wine' />
+            <input type='text' placeholder='Meat' value='Meat' />
+            <input type='text' placeholder='Secondary' value='Secondary Option' />
+            <input type='text' placeholder='Tertiary' value='Tertiary Option' />
+          </label>
       </div>
     )
   }
