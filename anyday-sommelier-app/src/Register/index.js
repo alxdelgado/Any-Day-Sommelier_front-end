@@ -4,7 +4,7 @@ class Register extends Component {
   constructor() {
     super();
     this.state = {
-      username: '',
+      email: '',
       password: ''
     }
   }
@@ -36,13 +36,18 @@ class Register extends Component {
         <h1>Register</h1>
         <form onSubmit={this.handleSubmit}>
           <label>
-            Username:
-            <input type='text' name='username' onChange={this.handleChange}/>
+            Email:
+            <input type='text' name='email' onChange={this.handleChange}/>
           </label><br/>
           <label>
             Password:
             <input type='submit' value ='Register'/>
+          </label><br/>
+          <label>
+            Confirm Password:
+            <input type='text' name='confirm password' />
           </label>
+            <input type='submit' value='login'/>
         </form>
       </div>
     )

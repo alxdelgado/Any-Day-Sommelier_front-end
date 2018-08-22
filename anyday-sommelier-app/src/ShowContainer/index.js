@@ -1,22 +1,21 @@
 import React, {Component} from 'react';
-import HomeContainer from './HomeContainer/index.js';
+import HomeContainer from '../HomeContainer'
 
-class ShowContainer extends React.Component {
-  constructor() {
-    super();
-    this.state = {
 
-    }
-  }
-
-  render() {
+const ShowContainer = (props) => {
+//   let listPairings;
+//   if(props.)
+// }
+//
+//   render() {
     return(
       <div>
         <h1>Show Page</h1>
+
       </div>
     )
-  }
+  // }
 
-};
+}
 
 export default ShowContainer;
