@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
 class HomeContainer extends React.Component {
   constructor() {
@@ -7,6 +7,7 @@ class HomeContainer extends React.Component {
       home: []
     }
   }
+
   render() {
     return(
       <div>
