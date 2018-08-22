@@ -1,5 +1,9 @@
+<<<<<<< HEAD
+import React, { Component } from 'react';
+=======
 import React, {Component} from 'react';
 import ShowContainer from '../ShowContainer/index.js'
+>>>>>>> f36949d9a4fa6bf3373e27317495dd11738c3251
 
 class HomeContainer extends React.Component {
   constructor() {
@@ -10,6 +14,8 @@ class HomeContainer extends React.Component {
       meat: []
     }
   }
+<<<<<<< HEAD
+=======
   getWines = async () => {
     try {
       const wineData = await fetch ("http://localhost:8000/api/wines/");
@@ -88,14 +94,20 @@ class HomeContainer extends React.Component {
     //   [event.target.name]: event.target.value
     // });
   }
+>>>>>>> f36949d9a4fa6bf3373e27317495dd11738c3251
 
   render() {
     // .map() here to create <option> tags to include inside your select tags below
     return(
       <div>
+<<<<<<< HEAD
+        <img className="Hero2" src="/Images/MainLogo.svg" alt="Logo"></img>
+        <img className="Hero" src="/Images/TypeLogo.svg" alt="Decorative Text Logo"></img>
+=======
         <img className="placeholderName" src="#" alt="Logo"></img>
         <img className="Hero" src="/Images/TypeLogo.svg"></img>
 
+>>>>>>> f36949d9a4fa6bf3373e27317495dd11738c3251
         <p>Welcome to Anyday Sommelier- the handy app for discovering your new favorite wine and entre pairings. Tap the icons to get started or sign in below to create an account, allowing to save, vote, and favorite pairings.</p>
 
         <form className="formField" onSubmit={this.handleSubmit}>

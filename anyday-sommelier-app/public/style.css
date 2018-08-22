@@ -58,15 +58,22 @@ nav {
 }
 
 div .navIcon {
-  height: 4vh;
-  width: 4vw;
-  align-items: center;
+  width: 20px;
+  margin: 7px;
 }
 
 .Hero {
   width: 75vw;
   max-width: 500px;
   justify-content: center;
+}
+
+.Hero2 {
+  max-height: 40vh;
+  margin-top: 20px;
+  min-height: 20vh;
+  justify-content: center;
+  filter: drop-shadow(5px 5px 0px black);
 }
 
 footer {

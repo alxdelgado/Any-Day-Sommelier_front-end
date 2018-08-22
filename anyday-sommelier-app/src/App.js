@@ -3,9 +3,16 @@ import HomeContainer from './HomeContainer/index2.js';
 import DeleteContainer from './DeleteContainer/index.js';
 import ShowContainer from './ShowContainer/index.js';
 import logo from './logo.svg';
+<<<<<<< HEAD
+import Header from "./Header";
+import Footer from "./Footer";
+import FormLogin from './FormLogin';
+import Results from './Results';
+=======
 import Header from './Header/index.js';
 import Footer from './Footer/index.js';
 import FormLogin from './FormLogin/index.js';
+>>>>>>> f36949d9a4fa6bf3373e27317495dd11738c3251
 import './App.css';
 import {Route, Switch, Link} from 'react-router-dom';
 import Register from './Register/index.js';
