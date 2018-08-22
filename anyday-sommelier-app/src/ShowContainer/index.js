@@ -3,19 +3,42 @@ import HomeContainer from '../HomeContainer'
 
 
 const ShowContainer = (props) => {
-//   let listPairings;
-//   if(props.)
-// }
-//
-//   render() {
+  
+  // check submit button
+  
+  // let something you're going to set in some block scope before you set it
+  // so delcare it before if statement
+
+/**/
+  let list;
+  if (props.which == 'food') {
+    list = props.foodPairing.map((wine, i) =>{
+      return (
+        <li>{wine.type}</li>
+      )
+    })
+  } else if (props.which == 'wine') {
+    list = props.winePairing.map((food, i) =>{
+      return (
+        <li>{food.type}</li>
+      )
+    })
+  }
+
+ // console.log(list)
+
+
+/**/
+
     return(
-      <div>
-        <h1>Show Page</h1>
+     
 
-      </div>
+      <ul>
+          
+        {list}
+
+      </ul>
     )
-  // }
-
 }
 
 export default ShowContainer;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HomeContainer from './HomeContainer/index.js';
+import HomeContainer from './HomeContainer/index2.js';
 import DeleteContainer from './DeleteContainer/index.js';
 import ShowContainer from './ShowContainer/index.js';
 import logo from './logo.svg';
