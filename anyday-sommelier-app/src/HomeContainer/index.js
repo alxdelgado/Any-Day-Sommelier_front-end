@@ -1,18 +1,20 @@
 import React, {Component} from 'react';
+import ShowContainer from '../ShowContainer/index.js'
 
 class HomeContainer extends React.Component {
   constructor() {
     super();
     this.state = {
       users: [],
-      wine: [],
+      wines: [],
       meat: []
     }
   }
   getWines = async () => {
     try {
-      const wineData = await fetch ("http://localhost:8000/api/wines");
-      const wines = wineData.json();
+      const wineData = await fetch ("http://localhost:8000/api/wines/");
+      const wines = await wineData.json();
+      console.log(wines)
       return wines;
     } catch(err) {
       console.log(err);
@@ -20,6 +22,7 @@ class HomeContainer extends React.Component {
     }
   }
 
+  // this will happen automatically after render()
   componentDidMount() {
     this.getWines().then((res) => {
       this.setState({
@@ -31,7 +34,7 @@ class HomeContainer extends React.Component {
   addWines = async (wines, event) => {
     event.preventDefault();
     try {
-      const createdWines = await fetch("http://localhost:8000/api/wines", {
+      const createdWines = await fetch("http://localhost:8000/api/wines/", {
         method: "POST",
         body: JSON.stringify(wines),
         headers: {
@@ -50,7 +53,44 @@ class HomeContainer extends React.Component {
     }
   }
 
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    // if person submitted wine, hit the wine paring api endpoint and do all the stuff with the data you get back
+    // or if they "  food, " " " food paring api endpoint " " " " " "
+    try {
+
+      const wineResponse = await fetch("http://localhost:8000/api/wines/", {
+        method: "POST",
+        body: JSON.stringify(this.state.wine),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+
+      const parsedResponse = await wineResponse.json();
+      if(parsedResponse.data === true) {
+        this.props.history.push("/wine");
+      }
+
+    } catch(err) {
+      console.log(err);
+    }
+  }
+
+  handleChange = (event) => {
+    // change what wine is chosen in state
+    // or change what food is chosen in state
+
+    // ahve a var in state that corresponds to those choices
+    // and this should change it?
+
+    // this.setState({
+    //   [event.target.name]: event.target.value
+    // });
+  }
+
   render() {
+    // .map() here to create <option> tags to include inside your select tags below
     return(
       <div>
         <img className="placeholderName" src="#" alt="Logo"></img>
@@ -58,10 +98,18 @@ class HomeContainer extends React.Component {
 
         <p>Welcome to Anyday Sommelier- the handy app for discovering your new favorite wine and entre pairings. Tap the icons to get started or sign in below to create an account, allowing to save, vote, and favorite pairings.</p>
 
-        <input type='text' placeholder='wine' value='wine' />
+        <form className="formField" onSubmit={this.handleSubmit}>
+          <label>
+            <select select="option" placeholder="Wine Type"/><br/>
+            <input type="submit" value="Submit"/><br/>
+          </label>
 
-        {this.state.wine}
 
+          <label>
+            <select select="option" placeholder="Food Type"/><br/>
+            <input type="submit" value="Submit"/><br/>
+          </label>
+        </form>
       </div>
     )
   }
